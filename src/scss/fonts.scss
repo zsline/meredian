@@ -1,0 +1,211 @@
+@font-face {
+	font-family: HK Grotesk;
+	font-display: swap;
+	src: url("../fonts/HKGrotesk-Regular.woff2") format("woff2"), url("../fonts/HKGrotesk-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: HK Grotesk;
+	font-display: swap;
+	src: url("../fonts/HKGrotesk-Medium.woff2") format("woff2"), url("../fonts/HKGrotesk-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: icon;
+	font-display: swap;
+	src: url("../fonts/icon.woff2") format("woff2"), url("../fonts/icon.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: HK Grotesk;
+	font-display: swap;
+	src: url("../fonts/HKGrotesk-SemiBoldLegacy.woff2") format("woff2"), url("../fonts/HKGrotesk-SemiBoldLegacy.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: HK Grotesk;
+	font-display: swap;
+	src: url("../fonts/HKGrotesk-SemiBold.woff2") format("woff2"), url("../fonts/HKGrotesk-SemiBold.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: HK Grotesk;
+	font-display: swap;
+	src: url("../fonts/HKGrotesk-RegularLegacy.woff2") format("woff2"), url("../fonts/HKGrotesk-RegularLegacy.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Outfit;
+	font-display: swap;
+	src: url("../fonts/Outfit-Light.woff2") format("woff2"), url("../fonts/Outfit-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: Outfit;
+	font-display: swap;
+	src: url("../fonts/Outfit-Medium.woff2") format("woff2"), url("../fonts/Outfit-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: Outfit;
+	font-display: swap;
+	src: url("../fonts/Outfit-Regular.woff2") format("woff2"), url("../fonts/Outfit-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Outfit;
+	font-display: swap;
+	src: url("../fonts/Outfit-SemiBold.woff2") format("woff2"), url("../fonts/Outfit-SemiBold.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: icon;
+	font-display: swap;
+	src: url("../fonts/icon.woff2") format("woff2"), url("../fonts/icon.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: HK Grotesk;
+	font-display: swap;
+	src: url("../fonts/HKGrotesk-Medium.woff2") format("woff2"), url("../fonts/HKGrotesk-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: HK Grotesk;
+	font-display: swap;
+	src: url("../fonts/HKGrotesk-Regular.woff2") format("woff2"), url("../fonts/HKGrotesk-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: HK Grotesk;
+	font-display: swap;
+	src: url("../fonts/HKGrotesk-SemiBold.woff2") format("woff2"), url("../fonts/HKGrotesk-SemiBold.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: HK Grotesk;
+	font-display: swap;
+	src: url("../fonts/HKGrotesk-RegularLegacy.woff2") format("woff2"), url("../fonts/HKGrotesk-RegularLegacy.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: HK Grotesk;
+	font-display: swap;
+	src: url("../fonts/HKGrotesk-SemiBoldLegacy.woff2") format("woff2"), url("../fonts/HKGrotesk-SemiBoldLegacy.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Outfit;
+	font-display: swap;
+	src: url("../fonts/Outfit-Light.woff2") format("woff2"), url("../fonts/Outfit-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: Outfit;
+	font-display: swap;
+	src: url("../fonts/Outfit-Medium.woff2") format("woff2"), url("../fonts/Outfit-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: Outfit;
+	font-display: swap;
+	src: url("../fonts/Outfit-SemiBold.woff2") format("woff2"), url("../fonts/Outfit-SemiBold.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Outfit;
+	font-display: swap;
+	src: url("../fonts/Outfit-Regular.woff2") format("woff2"), url("../fonts/Outfit-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'icon';
+	src:
+	  url('fonts/icon.woff?vq493p') format('woff'),
+	  url('fonts/icon.svg?vq493p#icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-check:before {
+	content: "\e901";
+  }
+  .icon-search:before {
+	content: "\e90d";
+  }
+  .icon-cart:before {
+	content: "\e900";
+  }
+  .icon-closed:before {
+	content: "\e902";
+  }
+  .icon-facebook:before {
+	content: "\e903";
+  }
+  .icon-instagram:before {
+	content: "\e904";
+  }
+  .icon-location_on:before {
+	content: "\e905";
+  }
+  .icon-mail:before {
+	content: "\e906";
+  }
+  .icon-next-arrow:before {
+	content: "\e907";
+  }
+  .icon-next-arrow-min:before {
+	content: "\e908";
+  }
+  .icon-phone:before {
+	content: "\e909";
+  }
+  .icon-phone-mini:before {
+	content: "\e90a";
+  }
+  .icon-prev-arrow:before {
+	content: "\e90b";
+  }
+  .icon-prev-arrow-min:before {
+	content: "\e90c";
+  }
+  .icon-star:before {
+	content: "\e90e";
+  }
+  
