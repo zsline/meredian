@@ -1,9 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'HK Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 42px;
+    color: var(--black-color);
+}
+
 a {
-    display: block;
+    display: inline-block;
     color: inherit;
     text-decoration: none;
     outline: none;
     transition: all 0.3s ease-in-out;
+
     &:hover,
     &:focus {
         opacity: 0.6;
@@ -15,7 +28,6 @@ li {
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
 
 li {
@@ -23,25 +35,13 @@ li {
     padding: 0;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'HK Grotesk';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 43px;
-    color: var(--black-color);
-}
-
-.flex{
+.flex {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-.container { 
+.container {
     max-width: 1750px;
     padding: 0 15px;
     margin: 0 auto;
@@ -55,5 +55,19 @@ body {
     transform: translateY(-50%);
     border: none;
     background-color: transparent;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: var(--accent-color);
+    display: inline-block;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 32px;
+    letter-spacing: 0.265em;
+    text-transform: uppercase;
+    color: #fff;
     cursor: pointer;
 }
