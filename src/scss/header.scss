@@ -28,7 +28,7 @@
 
     &__logo {
         margin: 0 auto;
-
+        opacity: 1;
         img {
             max-width: 380px;
         }
@@ -40,6 +40,7 @@
     &__nav {
         display: flex;
         align-items: center;
+        justify-content: end;
 
         &-list {
             display: flex;
@@ -47,20 +48,28 @@
             justify-content: start;
         }
 
+        &-list:nth-child(2) {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+
         &-item {
             margin-right: 1.5em;
 
             a {
                 white-space: nowrap;
-                transition: all 0.3s;
                 outline: none;
+                transition: all 0.3s;
 
                 &:hover {
                     color: var(--menu-hover-color);
+                    opacity: 1;
                 }
 
                 &:focus {
                     color: var(--menu-hover-color);
+                    opacity: 1;
                 }
             }
         }
@@ -90,6 +99,7 @@
         font-size: 16px;
     }
 }
+
 .burger-btn__open,
 .burger-btn__close {
     display: none;
@@ -113,9 +123,7 @@
         }
     }
 
-    .container {
-        width: 80%;
-    }
+
 
     .logo img {
         max-width: 205px;
@@ -138,6 +146,7 @@
     .burger-btn__open {
         display: block;
     }
+
     .burger-btn__close {
         display: none;
     }
