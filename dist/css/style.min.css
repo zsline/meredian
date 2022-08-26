@@ -942,6 +942,110 @@ li {
     padding: 25px 30px;
   }
 }
+.instagram__title {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 75px;
+  line-height: 82px;
+  margin-bottom: 27px;
+}
+.instagram__inner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: var(--light-grey-color);
+}
+.instagram__item {
+  position: relative;
+  height: 100%;
+}
+.instagram__item img {
+  display: inline-block;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+.instagram__item-link {
+  position: absolute;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.instagram__item-link a {
+  color: #fff;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: 0.265em;
+  text-transform: uppercase;
+  border: 4px solid #fff;
+  padding: 30px 50px;
+}
+.instagram__item:hover .instagram__item-link,
+.instagram .instagram__item-link a {
+  opacity: 1;
+}
+
+@media (max-width: 1100px) {
+  .instagram__title {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 75px;
+    line-height: 82px;
+    margin-bottom: 27px;
+  }
+  .instagram__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 740px) {
+  .instagram__item-link a {
+    font-size: 17.8055px;
+    line-height: 22px;
+    letter-spacing: 0.265em;
+    border: 2px solid #fff;
+    padding: 10px 25px;
+  }
+}
+@media (max-width: 640px) {
+  .instagram__title {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 27px;
+  }
+  .instagram__item-link a {
+    font-size: 17.8055px;
+    line-height: 22px;
+    text-transform: lowercase;
+    letter-spacing: 0.265em;
+    text-align: center;
+    padding: 5px;
+  }
+}
+@media (max-width: 500px) {
+  .instagram__inner {
+    display: flex;
+    flex-direction: column;
+  }
+  .instagram__item-link a {
+    font-size: 17.8055px;
+    line-height: 22px;
+    letter-spacing: 0.265em;
+    border: 2px solid #fff;
+    padding: 10px 25px;
+    text-transform: uppercase;
+  }
+}
 .footer__feedback {
   position: relative;
   background-size: cover;
