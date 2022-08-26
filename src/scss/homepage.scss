@@ -532,7 +532,7 @@
     }
 
     .rating {
-        padding-right: 180px;
+        // padding-right: 180px;
         font-size: 20px;
         line-height: 25px;
         letter-spacing: 0.265em;
@@ -573,5 +573,30 @@
 
     .rating__star:nth-of-type(5) {
         width: 7.5em;
+    }
+}
+@media(max-width:420px) {
+    .rating{
+        position: relative;
+        padding-right: 0px;
+        padding-left: 20px;
+        padding-bottom: 70px;
+    }
+    .rating__caption{
+        bottom: 70px;
+        left: 50px;
+    }
+    .rating__star:focus~.rating__focus {
+        outline: none;
+    }
+    .rating__group{
+        margin: 0 auto;
+    }
+    .furniture__info-title{
+        font-size: 25px;
+    }
+    .offer__btn{
+        padding: 25px 30px;
+
     }
 }

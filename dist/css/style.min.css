@@ -884,7 +884,6 @@ li {
     line-height: 35px;
   }
   .rating {
-    padding-right: 180px;
     font-size: 20px;
     line-height: 25px;
     letter-spacing: 0.265em;
@@ -917,6 +916,30 @@ li {
   }
   .rating__star:nth-of-type(5) {
     width: 7.5em;
+  }
+}
+@media (max-width: 420px) {
+  .rating {
+    position: relative;
+    padding-right: 0px;
+    padding-left: 20px;
+    padding-bottom: 70px;
+  }
+  .rating__caption {
+    bottom: 70px;
+    left: 50px;
+  }
+  .rating__star:focus ~ .rating__focus {
+    outline: none;
+  }
+  .rating__group {
+    margin: 0 auto;
+  }
+  .furniture__info-title {
+    font-size: 25px;
+  }
+  .offer__btn {
+    padding: 25px 30px;
   }
 }
 .footer__feedback {
@@ -1194,5 +1217,44 @@ li {
   .footer__info-police a {
     font-size: 16px;
     line-height: 20px;
+  }
+}
+@media (max-width: 420px) {
+  .pay {
+    margin-top: 35px;
+  }
+  .pay__nav-list {
+    display: flex;
+  }
+  .pay__nav-link {
+    margin-right: 27px;
+    width: 50px;
+    height: 50px;
+  }
+  .pay__nav-link:nth-child(3) {
+    margin-right: 0px;
+  }
+  .pay__nav-link img {
+    display: block;
+    width: 30px;
+    height: auto;
+  }
+  .footer__info-text {
+    width: 80%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 42px;
+    color: var(--light-grey-text);
+    margin-bottom: 40px;
+  }
+  .footer__info-office {
+    font-size: 18px;
+  }
+  .not-mrg {
+    margin-right: 0;
+  }
+  .offer__title,
+.manufacturing__text {
+    font-size: 25px;
   }
 }
