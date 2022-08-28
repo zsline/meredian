@@ -410,11 +410,11 @@
     &__inner {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     &__info {
         max-width: 930px;
-        padding-right: 80px;
 
         &-title {
             font-family: 'Outfit';
@@ -427,43 +427,58 @@
         }
 
         &-text {
+
             max-width: 850px;
             margin-bottom: 80px;
         }
     }
 
+    .slider {
+        &__nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 25px;
+
+            &-pagination {
+                margin: 0 8px;
+            }
+        }
+
+        &__btn {
+            border: none;
+            background-color: transparent;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    }
+
     &__slider {
-        max-width: 705px;
+        width: 705px;
+        height: 836px;
         margin-left: 90px;
-    }
-}
+        padding-bottom: 80px;
 
-
-.slider {
-    &__nav {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 25px;
-
-        &-pagination {
-            margin: 0 8px;
+        &-item {
+            width: 705px;
+            height: 836px;
+            cursor: pointer;
         }
-    }
 
-    &__btn {
-        border: none;
-        background-color: transparent;
-        font-size: 25px;
-        cursor: pointer;
-    }
-
-    &__item {
         img {
+            display: block;
             width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 1;
+            transition: all 0.3s;
         }
     }
+
 }
+
+
+
 
 @media(max-width:1100px) {
     .furniture {
@@ -702,6 +717,7 @@
             margin-bottom: 27px;
         }
     }
+
     .instagram__item-link a {
         font-size: 17.8055px;
         line-height: 22px;
@@ -711,6 +727,7 @@
         padding: 5px;
     }
 }
+
 @media(max-width:500px) {
     .instagram {
         &__inner {
@@ -718,6 +735,7 @@
             flex-direction: column;
         }
     }
+
     .instagram__item-link a {
         font-size: 17.8055px;
         line-height: 22px;
