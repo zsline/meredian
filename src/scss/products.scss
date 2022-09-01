@@ -1,0 +1,79 @@
+.sale-time {
+    margin-bottom: 100px;
+
+    &__inner {
+        padding: 83px 0;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 65px;
+        line-height: 82px;
+    }
+
+    &__clock {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 65px;
+        line-height: 82px;
+        letter-spacing: 0.265em;
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 25px;
+        line-height: 32px;
+        letter-spacing: 0.265em;
+        text-transform: uppercase;
+    }
+
+}
+
+.collection-room {
+    margin-bottom: 100px;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 355px 1fr;
+    }
+
+    &__sidebar {
+        min-height: 500px;
+    }
+
+    &__title {
+        font-weight: 300;
+        font-size: 55px;
+        margin-bottom: 100px;
+    }
+
+    &__inner {
+        min-height: 500px;
+        &-numpage{
+            margin-left: 2rem;
+        }
+        &-choice {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        &-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 50px;
+            justify-content: space-between;
+        }
+
+        &-item {
+            height: 512px;
+            background-color: bisque;
+        }
+    }
+
+}

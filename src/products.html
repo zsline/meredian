@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+"title":"Products"
+})
+
+<body>
+    @@include('html/header.html',{})
+    @@include('html/pagination.html',{})
+    <main>
+        <div class="sale-time">
+            <div class="container">
+                <div class="sale-time__inner" style="background-image: url(@img/collection-bg.jpg);">
+                    <div class="sale-time__title outfit">
+                        Two Day Sale - Up To 40% Off
+                    </div>
+                    <div class="sale-time__clock">
+                        20:10:08:20
+                    </div>
+                    <div class="sale-time__text outfit">Ending Soon!</div>
+                </div>
+            </div>
+        </div>
+        <div class="collection-room">
+            <div class="container">
+                <div class="collection-room__wrapper">
+                    <div class="collection-room__sidebar">
+                        <div class="collection-room__title outfit">
+                            Collection
+                        </div>
+                        <div class="collection-room__category">
+                            <div class="collection-room__category-title">
+                                Category
+                            </div>
+                        </div>
+                        <div class="collection-room__featured">
+                            <div class="collection-room__featured-title">
+                                Featured
+                            </div>
+                        </div>
+                        <div class="collection-room__range">
+                            <div class="collection-room__range-title">
+                                Price Range
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collection-room__inner">
+                        <div class="collection-room__inner-choice">
+                            <div class="collection-room__inner-showing">
+                                Showing<span class="collection-room__inner-numpage">1</span>-<span class="collection-room__inner-chosen">24</span> of <span class="collection-room__inner-total">557</span> Products
+                            </div>
+                            <div class="collection-room__inner-selector">
+                                Sort by
+                                <select name="select">
+                                    <option value="value1" selected>Most recent</option>
+                                    <option value="value2">Most recent</option>
+                                    <option value="value3">Most recent</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="collection-room__inner-grid">
+                            <div class="collection-room__inner-item">
+                                
+                            </div>
+                            <div class="collection-room__inner-item">
+
+                            </div>
+                            <div class="collection-room__inner-item">
+
+                            </div>
+                            <div class="collection-room__inner-item">
+
+                            </div>
+                            <div class="collection-room__inner-item">
+
+                            </div>
+                            <div class="collection-room__inner-item">
+
+                            </div>
+                            <div class="collection-room__inner-item">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include('html/footer.html',{})
+</body>
+
+</html>

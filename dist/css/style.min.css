@@ -310,6 +310,10 @@ li {
   cursor: pointer;
 }
 
+.outfit {
+  font-family: "Outfit";
+}
+
 .slider__wrapper {
   position: relative;
   width: 100%;
@@ -1192,7 +1196,6 @@ li {
 }
 .instagram__item-link a {
   color: #fff;
-  font-family: "Outfit";
   font-style: normal;
   font-weight: 300;
   font-size: 25px;
@@ -1209,7 +1212,6 @@ li {
 
 @media (max-width: 1100px) {
   .instagram__title {
-    font-family: "Outfit";
     font-style: normal;
     font-weight: 500;
     font-size: 75px;
@@ -1348,6 +1350,9 @@ li {
   margin-bottom: 70px;
 }
 
+.we {
+  margin-bottom: 100px;
+}
 .we__inner {
   display: flex;
   align-items: center;
@@ -1392,6 +1397,9 @@ li {
     font-size: 20px;
     line-height: 33px;
   }
+  .we {
+    margin-bottom: 40px;
+  }
   .we__inner {
     flex-direction: column;
   }
@@ -1412,6 +1420,99 @@ li {
     line-height: 33px;
   }
 }
+.pagination__inner {
+  padding: 40px 0;
+}
+.pagination__nav-list {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 150%;
+}
+.pagination__nav-list span {
+  margin: 0 0.5em;
+}
+.pagination p {
+  margin: 0;
+  padding: 0;
+}
+.pagination a {
+  color: var(--light-grey-text);
+  transition: all 0.3s;
+}
+.pagination a:hover {
+  color: var(--menu-hover-color);
+  opacity: 1;
+}
+
+.sale-time {
+  margin-bottom: 100px;
+}
+.sale-time__inner {
+  padding: 83px 0;
+  text-align: center;
+  color: #fff;
+}
+.sale-time__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 82px;
+}
+.sale-time__clock {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 82px;
+  letter-spacing: 0.265em;
+}
+.sale-time__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 32px;
+  letter-spacing: 0.265em;
+  text-transform: uppercase;
+}
+
+.collection-room {
+  margin-bottom: 100px;
+}
+.collection-room__wrapper {
+  display: grid;
+  grid-template-columns: 355px 1fr;
+}
+.collection-room__sidebar {
+  min-height: 500px;
+}
+.collection-room__title {
+  font-weight: 300;
+  font-size: 55px;
+  margin-bottom: 100px;
+}
+.collection-room__inner {
+  min-height: 500px;
+}
+.collection-room__inner-numpage {
+  margin-left: 2rem;
+}
+.collection-room__inner-choice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.collection-room__inner-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  justify-content: space-between;
+}
+.collection-room__inner-item {
+  height: 512px;
+  background-color: bisque;
+}
+
 .footer__feedback {
   position: relative;
   background-size: cover;
