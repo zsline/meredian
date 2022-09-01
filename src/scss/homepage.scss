@@ -462,9 +462,6 @@
         padding-bottom: 80px;
 
         &-item {
-            position: absolute;
-            right: 0;
-            top: 0;
             width: 705px;
             height: 836px;
             cursor: pointer;
@@ -767,11 +764,11 @@
         &-wrapper {
             display: flex;
             transition: all ease 0.3s;
-
+            overflow: hidden;
         }
 
         &-item {
-            min-width: 360px;
+            width: 360px;
             text-align: left;
             margin-right: 52px;
 
@@ -815,16 +812,23 @@
 
 @media (max-width: 950px) {
     .ship__slider {
+        padding: 0;
+
         &-item {
             text-align: center;
             margin: 0;
             padding: 0;
-            min-width: 100%;
+            min-width: 290px;
         }
 
         &-prev,
         &-next {
             display: none;
+        }
+
+        &-btn {
+            font-size: 16px;
+            line-height: 18px;
         }
     }
 

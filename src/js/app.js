@@ -87,7 +87,8 @@ $('.ship__slider-wrapper').slick({
         breakpoint: 950,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows: false
         }
       }
     ]
