@@ -60,6 +60,7 @@
 
     &__inner {
         min-height: 500px;
+
         ul li {
             margin-bottom: 15px;
         }
@@ -67,7 +68,7 @@
         &-numpage {
             margin-left: 2rem;
 
-            
+
         }
 
         &-choice {
@@ -93,7 +94,7 @@
 
         &-item {
             max-height: 512px;
-            
+
 
             img {
                 width: 100%;
@@ -115,10 +116,12 @@
         &-title {
             margin-bottom: 15px;
         }
-        &-selector{
+
+        &-selector {
             display: flex;
             align-items: center;
-            p{
+
+            p {
                 margin-right: 40px;
             }
         }
@@ -131,7 +134,8 @@
             position: relative;
             width: 100%;
             margin-bottom: 30px;
-            li{
+
+            li {
                 margin-bottom: 15px;
             }
         }
@@ -149,18 +153,20 @@
                 appearance: none;
                 position: absolute;
             }
-            
+
         }
-        &-title{
-                margin-bottom: 30px;
-            }
+
+        &-title {
+            margin-bottom: 30px;
+        }
 
         &-check {
             display: none;
         }
 
     }
-    &__item{
+
+    &__item {
         border-bottom: 2px solid var(--light-grey-color);
         margin-bottom: 30px;
         padding-bottom: 30px;
@@ -170,22 +176,26 @@
         &-item {
             position: relative;
             width: 100%;
-            li{
+
+            li {
                 margin-bottom: 15px;
             }
         }
-        &-title{
+
+        &-title {
             margin-bottom: 30px;
         }
     }
-    &__range{
-        &-title{
+
+    &__range {
+        &-title {
             margin-bottom: 30px;
         }
     }
 
 }
-.collection-room__range-inner{
+
+.collection-room__range-inner {
     width: 250px;
 }
 
@@ -200,11 +210,27 @@
         color: var(--light-grey-color);
     }
 }
-.select__arrow{
+
+.select__arrow {
     position: absolute;
     top: 35%;
     right: 25px;
     font-size: 20px;
     transform: rotate(-90deg);
     pointer-events: none;
+}
+
+.timer {
+    &__items {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Outfit';
+        letter-spacing: 0.265em;
+        font-size: 65px;
+        line-height: 82px;
+    }
+    &__item{
+        padding: 0 5px;
+    }
 }

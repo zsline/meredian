@@ -1708,6 +1708,19 @@ select option {
   pointer-events: none;
 }
 
+.timer__items {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Outfit";
+  letter-spacing: 0.265em;
+  font-size: 65px;
+  line-height: 82px;
+}
+.timer__item {
+  padding: 0 5px;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
