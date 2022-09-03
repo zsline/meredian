@@ -115,6 +115,13 @@
         &-title {
             margin-bottom: 15px;
         }
+        &-selector{
+            display: flex;
+            align-items: center;
+            p{
+                margin-right: 40px;
+            }
+        }
 
     }
 
@@ -192,4 +199,12 @@
     &__old {
         color: var(--light-grey-color);
     }
+}
+.select__arrow{
+    position: absolute;
+    top: 35%;
+    right: 25px;
+    font-size: 20px;
+    transform: rotate(-90deg);
+    pointer-events: none;
 }

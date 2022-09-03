@@ -164,19 +164,37 @@ li {
             transition: all 0.3s ease;
         }
     }
-    &__content{
+
+    &__content {
         display: none;
         transition: all 0.3s;
     }
 }
-.active .accordeon__content{
+
+.active .accordeon__content {
     display: block;
 }
-.active .accordeon__title span::after{
+
+.active .accordeon__title span::after {
     height: 0px;
     top: 2px;
 }
 
 .grey {
     color: var(--light-grey-text);
+}
+
+select {
+    padding: 20px 168px 20px 25px;
+    border: 2px solid var(--grey-color);
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    appearance: none;
+}
+select option {
+    max-width: 100%;
+}
+.select{
+    position: relative;
 }
