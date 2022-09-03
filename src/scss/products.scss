@@ -1,10 +1,14 @@
 .sale-time {
     margin-bottom: 100px;
 
+
     &__inner {
         padding: 83px 0;
         text-align: center;
         color: #fff;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     &__title {
@@ -12,6 +16,7 @@
         font-weight: 400;
         font-size: 65px;
         line-height: 82px;
+        margin-bottom: 40px;
     }
 
     &__clock {
@@ -20,6 +25,7 @@
         font-size: 65px;
         line-height: 82px;
         letter-spacing: 0.265em;
+        margin-bottom: 40px;
     }
 
     &__text {
@@ -39,6 +45,7 @@
     &__wrapper {
         display: grid;
         grid-template-columns: 355px 1fr;
+        gap: 80px;
     }
 
     &__sidebar {
@@ -53,9 +60,16 @@
 
     &__inner {
         min-height: 500px;
-        &-numpage{
-            margin-left: 2rem;
+        ul li {
+            margin-bottom: 15px;
         }
+
+        &-numpage {
+            margin-left: 2rem;
+
+            
+        }
+
         &-choice {
             display: flex;
             justify-content: space-between;
@@ -70,10 +84,112 @@
             justify-content: space-between;
         }
 
+        &-img {
+            width: 100%;
+            height: 75%;
+            overflow: hidden;
+            margin-bottom: 16px;
+        }
+
         &-item {
-            height: 512px;
-            background-color: bisque;
+            max-height: 512px;
+            
+
+            img {
+                width: 100%;
+                object-fit: cover;
+                transition: all 0.3s;
+
+            }
+        }
+
+        &-item:hover,
+        &-item:focus {
+            opacity: 0.8;
+
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+        &-title {
+            margin-bottom: 15px;
+        }
+
+    }
+
+    &__category {
+
+        &-item {
+            position: relative;
+            width: 100%;
+            margin-bottom: 30px;
+            li{
+                margin-bottom: 15px;
+            }
+        }
+
+        &-lable {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+
+            input {
+                width: 0;
+                height: 0;
+                -webkit-appearance: none;
+                appearance: none;
+                position: absolute;
+            }
+            
+        }
+        &-title{
+                margin-bottom: 30px;
+            }
+
+        &-check {
+            display: none;
+        }
+
+    }
+    &__item{
+        border-bottom: 2px solid var(--light-grey-color);
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__featured {
+        &-item {
+            position: relative;
+            width: 100%;
+            li{
+                margin-bottom: 15px;
+            }
+        }
+        &-title{
+            margin-bottom: 30px;
+        }
+    }
+    &__range{
+        &-title{
+            margin-bottom: 30px;
         }
     }
 
+}
+.collection-room__range-inner{
+    width: 250px;
+}
+
+.collection-room__inner-item .price {
+
+    &__new,
+    &__sale {
+        color: var(--red);
+    }
+
+    &__old {
+        color: var(--light-grey-color);
+    }
 }
