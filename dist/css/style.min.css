@@ -1542,6 +1542,7 @@ select option {
 
 .sale-time {
   margin-bottom: 100px;
+  position: relative;
 }
 .sale-time__inner {
   padding: 83px 0;
@@ -1550,6 +1551,19 @@ select option {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.sale-time__inner span {
+  position: relative;
+  z-index: 1;
+}
+.sale-time__inner::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 .sale-time__title {
   font-style: normal;
@@ -1566,6 +1580,12 @@ select option {
   letter-spacing: 0.265em;
   margin-bottom: 40px;
 }
+@media (max-width: 660px) {
+  .sale-time__clock {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
 .sale-time__text {
   font-style: normal;
   font-weight: 300;
@@ -1576,6 +1596,7 @@ select option {
 }
 
 .collection-room {
+  position: relative;
   margin-bottom: 100px;
 }
 .collection-room__wrapper {
@@ -1583,34 +1604,88 @@ select option {
   grid-template-columns: 355px 1fr;
   gap: 80px;
 }
+@media (max-width: 940px) {
+  .collection-room__wrapper {
+    display: block;
+  }
+}
 .collection-room__sidebar {
   min-height: 500px;
+}
+@media (max-width: 940px) {
+  .collection-room__sidebar {
+    display: none;
+  }
 }
 .collection-room__title {
   font-weight: 300;
   font-size: 55px;
-  margin-bottom: 100px;
+}
+@media (max-width: 940px) {
+  .collection-room__title {
+    font-size: 35px;
+    line-height: 44px;
+  }
 }
 .collection-room__inner {
   min-height: 500px;
 }
+.collection-room__inner-showing {
+  display: flex;
+}
+@media (max-width: 940px) {
+  .collection-room__inner-showing {
+    font-size: 15px;
+    line-height: 19px;
+  }
+}
+.collection-room__inner-showing--visible {
+  display: block;
+}
+@media (max-width: 1380px) {
+  .collection-room__inner-showing--visible {
+    display: none;
+  }
+}
 .collection-room__inner ul li {
   margin-bottom: 15px;
 }
-.collection-room__inner-numpage {
-  margin-left: 2rem;
-}
 .collection-room__inner-choice {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 355px 1fr auto;
+  grid-gap: 80px;
   align-items: center;
   margin-bottom: 100px;
+}
+@media (max-width: 940px) {
+  .collection-room__inner-choice {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 400px) {
+  .collection-room__inner-choice {
+    grid-gap: 0;
+    margin-bottom: 30px;
+  }
 }
 .collection-room__inner-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   justify-content: space-between;
+}
+@media (max-width: 1380px) {
+  .collection-room__inner-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+@media (max-width: 400px) {
+  .collection-room__inner-grid {
+    display: block;
+  }
 }
 .collection-room__inner-img {
   width: 100%;
@@ -1641,6 +1716,18 @@ select option {
 }
 .collection-room__inner-selector p {
   margin-right: 40px;
+}
+@media (max-width: 1380px) {
+  .collection-room__inner-selector p {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 940px) {
+  .collection-room__inner-selector {
+    position: absolute;
+    top: -100px;
+    right: 20vw;
+  }
 }
 .collection-room__category-item {
   position: relative;
@@ -1717,10 +1804,50 @@ select option {
   font-size: 65px;
   line-height: 82px;
 }
+@media (max-width: 660px) {
+  .timer__items {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
 .timer__item {
   padding: 0 5px;
 }
 
+select {
+  padding: 20px 168px 20px 25px;
+  border: 2px solid var(--grey-color);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 33px;
+  appearance: none;
+}
+@media (max-width: 1380px) {
+  select {
+    position: relative;
+    padding: 20px;
+    border: none;
+    appearance: none;
+    opacity: 0;
+    width: 30px;
+  }
+}
+
+select option {
+  max-width: 100%;
+}
+@media (max-width: 1380px) {
+  select option {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+.select {
+  position: relative;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

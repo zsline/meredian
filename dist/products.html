@@ -114,28 +114,53 @@
         <div class="sale-time">
             <div class="container">
                 <div class="sale-time__inner" style="background-image: url(img/collection-bg.jpg);">
-                    <div class="sale-time__title outfit">
-                        Two Day Sale - Up To 40% Off
-                    </div>
-                    <div class="timer">
-                        <div class="timer__items">
-                          <div class="timer__item timer__days">00</div>:
-                          <div class="timer__item timer__hours">00</div>:
-                          <div class="timer__item timer__minutes">00</div>:
-                          <div class="timer__item timer__seconds">00</div>
+                    <span>
+                        <div class="sale-time__title outfit">
+                            Two Day Sale - Up To 40% Off
                         </div>
-                      </div>
-                    <div class="sale-time__text outfit">Ending Soon!</div>
+                        <div class="timer">
+                            <div class="timer__items">
+                                <div class="timer__item timer__days">00</div>:
+                                <div class="timer__item timer__hours">00</div>:
+                                <div class="timer__item timer__minutes">00</div>:
+                                <div class="timer__item timer__seconds">00</div>
+                            </div>
+                        </div>
+                        <div class="sale-time__text outfit">Ending Soon!</div>
+                    </span>
+
                 </div>
             </div>
         </div>
         <div class="collection-room">
             <div class="container">
+                <div class="collection-room__inner-choice">
+                    <div class="collection-room__title outfit">
+                        Collection
+                    </div>
+                    <div class="collection-room__inner-showing">
+                        Showing&nbsp<span class="collection-room__inner-showing--visible">
+                            <span class="collection-room__inner-numpage">1</span>-<span
+                                class="collection-room__inner-chosen">24</span> of
+                        </span>
+                        <span class="collection-room__inner-total">&nbsp557&nbsp</span>
+                        Products
+                    </div>
+                    <div class="collection-room__inner-selector">
+                        <p>Sort by</p>
+                        <div class="select">
+                            <select name="select" size="-1">
+                                <option value="value1">Most recent 1</option>
+                                <option value="value2">Most recent 2</option>
+                                <option value="value3">Most recent 3</option>
+                            </select>
+                            <span class="select__arrow icon-prev-arrow"></span>
+                        </div>
+                    </div>
+                </div>
                 <div class="collection-room__wrapper">
                     <div class="collection-room__sidebar">
-                        <div class="collection-room__title outfit">
-                            Collection
-                        </div>
+
                         <div class="collection-room__category collection-room__item">
                             <div class="collection-room__category-title">
                                 Category
@@ -695,32 +720,16 @@
                                 <div class="filter-price__slider" id="renge-slider"></div>
                                 <div class="filter-price__inputs">
                                     <label class="filter-price__label">Min
-                                        <input type="number" min="500" max="900000" placeholder="500" class="filter-price__input" id="input-0"></label>
+                                        <input type="number" min="500" max="900000" placeholder="500"
+                                            class="filter-price__input" id="input-0"></label>
                                     <label class="filter-price__label">Max
-                                        <input type="number" min="500" max="900000" placeholder="900000" class="filter-price__input" id="input-1"></label>
+                                        <input type="number" min="500" max="900000" placeholder="900000"
+                                            class="filter-price__input" id="input-1"></label>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="collection-room__inner">
-                        <div class="collection-room__inner-choice">
-                            <div class="collection-room__inner-showing">
-                                Showing<span class="collection-room__inner-numpage">1</span>-<span
-                                    class="collection-room__inner-chosen">24</span> of <span
-                                    class="collection-room__inner-total">557</span> Products
-                            </div>
-                            <div class="collection-room__inner-selector">
-                                <p>Sort by</p>
-                                <div class="select">
-                                    <select name="select">
-                                        <option value="value1" selected>Most recent 1</option>
-                                        <option value="value2">Most recent 2</option>
-                                        <option value="value3">Most recent 3</option>
-                                    </select>
-                                    <span class="select__arrow icon-prev-arrow"></span>
-                                </div>
-                            </div>
-                        </div>
                         <ul class="collection-room__inner-grid">
                             <li>
                                 <a href="#" class="collection-room__inner-item">
@@ -1107,45 +1116,45 @@
 <script src="js/nouislider.min.js"></script>
 <script src="js/app.min.js"></script>
     <script>
-document.addEventListener('DOMContentLoaded', function() {
-  // конечная дата, например 1 июля 2021
-  const deadline = new Date(2022, 11, 31);
-  // id таймера
-  let timerId = null;
-  // склонение числительных
-  function declensionNum(num, words) {
-    return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
-  }
-  // вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
-  function countdownTimer() {
-    const diff = deadline - new Date();
-    if (diff <= 0) {
-      clearInterval(timerId);
-    }
-    const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
-    const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
-    const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
-    const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
-    $days.textContent = days < 10 ? '0' + days : days;
-    $hours.textContent = hours < 10 ? '0' + hours : hours;
-    $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
-    $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
-    $days.dataset.title = declensionNum(days, ['день', 'дня', 'дней']);
-    $hours.dataset.title = declensionNum(hours, ['час', 'часа', 'часов']);
-    $minutes.dataset.title = declensionNum(minutes, ['минута', 'минуты', 'минут']);
-    $seconds.dataset.title = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
-  }
-  // получаем элементы, содержащие компоненты даты
-  const $days = document.querySelector('.timer__days');
-  const $hours = document.querySelector('.timer__hours');
-  const $minutes = document.querySelector('.timer__minutes');
-  const $seconds = document.querySelector('.timer__seconds');
-  // вызываем функцию countdownTimer
-  countdownTimer();
-  // вызываем функцию countdownTimer каждую секунду
-  timerId = setInterval(countdownTimer, 1000);
-});
-      </script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // конечная дата, например 1 июля 2021
+            const deadline = new Date(2022, 11, 31);
+            // id таймера
+            let timerId = null;
+            // склонение числительных
+            function declensionNum(num, words) {
+                return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
+            }
+            // вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
+            function countdownTimer() {
+                const diff = deadline - new Date();
+                if (diff <= 0) {
+                    clearInterval(timerId);
+                }
+                const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
+                const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
+                const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
+                const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
+                $days.textContent = days < 10 ? '0' + days : days;
+                $hours.textContent = hours < 10 ? '0' + hours : hours;
+                $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
+                $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
+                $days.dataset.title = declensionNum(days, ['день', 'дня', 'дней']);
+                $hours.dataset.title = declensionNum(hours, ['час', 'часа', 'часов']);
+                $minutes.dataset.title = declensionNum(minutes, ['минута', 'минуты', 'минут']);
+                $seconds.dataset.title = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
+            }
+            // получаем элементы, содержащие компоненты даты
+            const $days = document.querySelector('.timer__days');
+            const $hours = document.querySelector('.timer__hours');
+            const $minutes = document.querySelector('.timer__minutes');
+            const $seconds = document.querySelector('.timer__seconds');
+            // вызываем функцию countdownTimer
+            countdownTimer();
+            // вызываем функцию countdownTimer каждую секунду
+            timerId = setInterval(countdownTimer, 1000);
+        });
+    </script>
 </body>
 
 </html>
