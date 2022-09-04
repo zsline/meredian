@@ -127,7 +127,7 @@ li {
     &__item {
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
 
     }
 
@@ -238,14 +238,7 @@ li {
 }
 
 .rating {
-    // position: relative;
-    // max-width: 280px;
-    // font-weight: 300;
-    // font-size: 25px;
-    // line-height: 32px;
-    // letter-spacing: 0.265em;
-    // text-transform: uppercase;
-    // font-family: sans-serif;
+    
     display: flex;
     align-items: center;
     margin: 1em 0 1em 0;

@@ -47,6 +47,44 @@ $('.ship__slider-wrapper').slick({
   ]
 });
 
+$('.product-item__slider-thumb').slick({
+  dots: false,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  prevArrow: '.product-item__slider-prev',
+  nextArrow: '.product-item__slider-next',
+  responsive: [
+    {
+      breakpoint: 1650,
+      settings: {
+        slidesToShow: 3,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 1320,
+      settings: {
+        slidesToShow: 2,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 950,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    }
+  ]
+});
+
+
+
+
+
 
 const rangeSlider = document.getElementById('renge-slider');
 if (rangeSlider) {

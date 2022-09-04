@@ -120,7 +120,35 @@
             <div class="container">
                 <div class="product-item__inner">
                     <div class="product-item__slider">
-
+                        <div class="product-item__slider-wrapper">
+                            <div class="product-item__slider-item">
+                                <img id="product-slider" src="img/product-1.jpg" alt="slider">
+                            </div>
+                        </div>
+                        <div class="product-item__slider-thumbs">
+                            <div class="product-item__slider-thumb">
+                                <button onclick="imgUrl('img/product-1.jpg')"><img src="img/product-1.jpg"
+                                        alt="slider"></button>
+                                <button onclick="imgUrl('img/collection-item2.jpg')"><img src="img/collection-item2.jpg"
+                                        alt="slider"></button>
+                                <button onclick="imgUrl('img/collection-item3.jpg')"><img src="img/collection-item3.jpg"
+                                        alt="slider"></button>
+                                <button onclick="imgUrl('img/collection-item4.jpg')"><img src="img/collection-item4.jpg"
+                                        alt="slider"></button>
+                                <button onclick="imgUrl('img/collection-item5.jpg')"><img src="img/collection-item5.jpg"
+                                        alt="slider"></button>
+                                <button onclick="imgUrl('img/collection-item6.jpg')"><img src="img/collection-item6.jpg"
+                                        alt="slider"></button>
+                                <button onclick="imgUrl('img/collection-item7.jpg')"><img src="img/collection-item7.jpg"
+                                        alt="slider"></button>
+                                <button onclick="imgUrl('img/collection-item8.jpg')"><img src="img/collection-item8.jpg"
+                                        alt="slider"></button>
+                            </div>
+                            <div class="product-item__slider-btns">
+                                <button class="product-item__slider-prev icon-prev-arrow"></button>
+                                <button class="product-item__slider-next icon-next-arrow"></button>
+                            </div>
+                        </div>
                     </div>
                     <div class="product-item__info">
                         <h1 class="outfit">Alma Velvet Armless</h1>
@@ -639,6 +667,11 @@
 <script src="js/slick.js"></script>
 <script src="js/nouislider.min.js"></script>
 <script src="js/app.min.js"></script>
+    <script type="text/javascript">
+        function imgUrl(thumbs) {
+            document.getElementById('product-slider').src = thumbs;
+        } 
+    </script>
 </body>
 
 </html>
