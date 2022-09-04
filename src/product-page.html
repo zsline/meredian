@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+"title":"Product"
+})
+
+<body>
+    @@include('html/header.html',{})
+    @@include('html/pagination-product.html',{})
+    <main>
+        <section class="product-item">
+            <div class="container">
+                <div class="product-item__inner">
+                    <div class="product-item__slider">
+
+                    </div>
+                    <div class="product-item__info">
+                        <h1 class="outfit">Alma Velvet Armless</h1>
+                        <div class="product-item__info-price price">
+                            <span class="price__new">£1,800.00</span> <span class="price__old">£2,500.00</span>
+                            <span class="price__sale">40% Off</span>
+                        </div>
+                        <div class="product-item__info-rating">
+                            <fieldset class="rating">
+                                <div class="rating__group">
+                                    <input class="rating__star" type="radio" name="health" value="1">
+                                    <input class="rating__star" type="radio" name="health" value="2">
+                                    <input class="rating__star" type="radio" name="health" value="3">
+                                    <input class="rating__star" type="radio" name="health" value="4">
+                                    <input class="rating__star" type="radio" name="health" value="5">
+                                    <div class="rating__focus"></div>
+                                </div>
+                                <div class="rating__info"><span class="rating__info-average">5</span>&nbsp(<span
+                                        class="rating__info-all">200&nbsp</span>customer review)</div>
+                            </fieldset>
+                        </div>
+                        <div class="product-item__info-colors">
+                            <p class="product-item__info-colors--title">
+                                Colors:
+                            </p>
+                            <ul class="product-item__info-colors--btns">
+                                <li class="product-item__info-colors--item">
+                                    <button class="product-item__info-colors--btn">
+                                    </button>
+                                </li>
+                                <li class="product-item__info-colors--item">
+                                    <button class="product-item__info-colors--btn">
+                                    </button>
+                                </li>
+                                <li class="product-item__info-colors--item">
+                                    <button class="product-item__info-colors--btn">
+                                    </button>
+                                </li>
+                                <li class="product-item__info-colors--item">
+                                    <button class="product-item__info-colors--btn">
+                                    </button>
+                                </li>
+                                <li class="product-item__info-colors--item">
+                                    <button class="product-item__info-colors--btn">
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="product-item__info-tocart btn">Add To Cart</button>
+                        <div class="product-item__info-guaranteed">
+                            <div class="product-item__info-guaranteed--title">
+                                Guaranteed Safe Checkout<span class="icon-closed"></span>
+                            </div>
+                            <div class="product-item__info-guaranteed--pay pay">
+                                <nav class="pay__nav">
+                                    <ul class="pay__nav-list">
+                                        <li class="pay__nav-item">
+                                            <a href="#" class="pay__nav-link">
+                                                <img src="@img/mastercard.svg" alt="mastercard">
+                                            </a>
+                                        </li>
+                                        <li class="pay__nav-item">
+                                            <a href="#" class="pay__nav-link">
+                                                <img src="@img/visa.svg" alt="mastercard">
+                                            </a>
+                                        </li>
+                                        <li class="pay__nav-item">
+                                            <a href="#" class="pay__nav-link">
+                                                <img src="@img/google-pay.svg" alt="mastercard">
+                                            </a>
+                                        </li>
+                                        <li class="pay__nav-item">
+                                            <a href="#" class="pay__nav-link not-mrg">
+                                                <img src="@img/apple-pay.svg" alt="mastercard">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="product-item__info-slider">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cast">
+            <div class="container">
+                <div class="cast__wrapper">
+                    <div class="cast__img">
+                        <img src="@img/furniture-cart.jpg" alt="Cast Aluminium Furniture">
+                    </div>
+                    <div class="cast__info">
+                        <h2 class="cast__info-title">Cast Aluminium Furniture</h2>
+                        <p class="cast__info-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris non suspendisse vivamus
+                            convallis proin. Molestie pulvinar tortor neque adipiscing mattis diam nibh nunc quis. Nisl
+                            sit faucibus amet et pharetra. Vitae quis porta aliquet semper. Pulvinar augue commodo
+                            facilisis sit habitant donec. Sed senectus natoque vitae faucibus volutpat cras ac
+                            ullamcorper nec. Quam tortor in aliquam iaculis fringilla. Diam feugiat mattis pulvinar
+                            congue mattis. Dui felis lacus, porta a facilisi. Nunc aliquam vulputate sem sapien lacus,
+                            nisi. Ullamcorper purus ut nisl non malesuada amet. Neque viverra quis dui et. Elit, et
+                            fringilla convallis elementum sodales non in.
+                            Amet amet, ut nunc quam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <sction class="faq">
+            <div class="container">
+                <h3 class="faq__title">
+                    Frequently Asked Questions
+                </h3>
+                <div class="faq__item accordeon">
+                    <button class="faq__item-title accordeon__title">
+                        Can I return my furniture?<span></span>
+                    </button>
+                    <p class="faq__item-content accordeon__content">
+                        In the unlikely event that you wish to return your furniture, Sabai Living offer a 30-day
+                        returns policy. However, you will be charged an administrative fee to cover this. Your refund
+                        will be processed as soon as the product has been returned to our warehouse and has been
+                        thoroughly checked for any damage or quality issues. Sabai Living can only issue refunds for
+                        items that are not damaged.
+
+                        What do I do if my item arrives damaged, or if I have received the wrong item?
+                        In the unlikely event that you receive a damaged item, please contact us within 24 hours of
+                        receiving your order. You can contact us via telephone or email. We will ask you to send
+                        photographs and a description of the damage and will then thoroughly investigate. If required,
+                        we will repair, replace, or refund your damaged item.
+
+                        If you receive an incorrect item, please report it to us as soon as possible and we will make
+                        arrangements for this to be returned and the correct item sent to you.
+                    </p>
+                </div>
+                <div class="faq__item accordeon">
+                    <button class="faq__item-title accordeon__title">
+                        Can your furniture be left outside?<span></span>
+                    </button>
+                    <p class="faq__item-content accordeon__content">
+                        In the unlikely event that you wish to return your furniture, Sabai Living offer a 30-day
+                        returns policy. However, you will be charged an administrative fee to cover this. Your refund
+                        will be processed as soon as the product has been returned to our warehouse and has been
+                        thoroughly checked for any damage or quality issues. Sabai Living can only issue refunds for
+                        items that are not damaged.
+
+                        What do I do if my item arrives damaged, or if I have received the wrong item?
+                        In the unlikely event that you receive a damaged item, please contact us within 24 hours of
+                        receiving your order. You can contact us via telephone or email. We will ask you to send
+                        photographs and a description of the damage and will then thoroughly investigate. If required,
+                        we will repair, replace, or refund your damaged item.
+
+                        If you receive an incorrect item, please report it to us as soon as possible and we will make
+                        arrangements for this to be returned and the correct item sent to you.
+                    </p>
+                </div>
+                <div class="faq__item accordeon">
+                    <button class="faq__item-title accordeon__title">
+                        What does powder coated mean?<span></span>
+                    </button>
+                    <p class="faq__item-content accordeon__content">
+                        In the unlikely event that you wish to return your furniture, Sabai Living offer a 30-day
+                        returns policy. However, you will be charged an administrative fee to cover this. Your refund
+                        will be processed as soon as the product has been returned to our warehouse and has been
+                        thoroughly checked for any damage or quality issues. Sabai Living can only issue refunds for
+                        items that are not damaged.
+
+                        What do I do if my item arrives damaged, or if I have received the wrong item?
+                        In the unlikely event that you receive a damaged item, please contact us within 24 hours of
+                        receiving your order. You can contact us via telephone or email. We will ask you to send
+                        photographs and a description of the damage and will then thoroughly investigate. If required,
+                        we will repair, replace, or refund your damaged item.
+
+                        If you receive an incorrect item, please report it to us as soon as possible and we will make
+                        arrangements for this to be returned and the correct item sent to you.
+                    </p>
+                </div>
+                <div class="faq__item accordeon">
+                    <button class="faq__item-title accordeon__title">
+                        What is thermosetting polymer?<span></span>
+                    </button>
+                    <p class="faq__item-content accordeon__content">
+                        In the unlikely event that you wish to return your furniture, Sabai Living offer a 30-day
+                        returns policy. However, you will be charged an administrative fee to cover this. Your refund
+                        will be processed as soon as the product has been returned to our warehouse and has been
+                        thoroughly checked for any damage or quality issues. Sabai Living can only issue refunds for
+                        items that are not damaged.
+
+                        What do I do if my item arrives damaged, or if I have received the wrong item?
+                        In the unlikely event that you receive a damaged item, please contact us within 24 hours of
+                        receiving your order. You can contact us via telephone or email. We will ask you to send
+                        photographs and a description of the damage and will then thoroughly investigate. If required,
+                        we will repair, replace, or refund your damaged item.
+
+                        If you receive an incorrect item, please report it to us as soon as possible and we will make
+                        arrangements for this to be returned and the correct item sent to you.
+                    </p>
+                </div>
+                <div class="faq__item accordeon">
+                    <button class="faq__item-title accordeon__title">
+                        Are your cushions machine washable?<span></span>
+                    </button>
+                    <p class="faq__item-content accordeon__content">
+                        In the unlikely event that you wish to return your furniture, Sabai Living offer a 30-day
+                        returns policy. However, you will be charged an administrative fee to cover this. Your refund
+                        will be processed as soon as the product has been returned to our warehouse and has been
+                        thoroughly checked for any damage or quality issues. Sabai Living can only issue refunds for
+                        items that are not damaged.
+
+                        What do I do if my item arrives damaged, or if I have received the wrong item?
+                        In the unlikely event that you receive a damaged item, please contact us within 24 hours of
+                        receiving your order. You can contact us via telephone or email. We will ask you to send
+                        photographs and a description of the damage and will then thoroughly investigate. If required,
+                        we will repair, replace, or refund your damaged item.
+
+                        If you receive an incorrect item, please report it to us as soon as possible and we will make
+                        arrangements for this to be returned and the correct item sent to you.
+                    </p>
+                </div>
+                <div class="faq__item accordeon">
+                    <button class="faq__item-title accordeon__title">
+                        Do the products fade in sunlight?<span></span>
+                    </button>
+                    <p class="faq__item-content accordeon__content">
+                        In the unlikely event that you wish to return your furniture, Sabai Living offer a 30-day
+                        returns policy. However, you will be charged an administrative fee to cover this. Your refund
+                        will be processed as soon as the product has been returned to our warehouse and has been
+                        thoroughly checked for any damage or quality issues. Sabai Living can only issue refunds for
+                        items that are not damaged.
+
+                        What do I do if my item arrives damaged, or if I have received the wrong item?
+                        In the unlikely event that you receive a damaged item, please contact us within 24 hours of
+                        receiving your order. You can contact us via telephone or email. We will ask you to send
+                        photographs and a description of the damage and will then thoroughly investigate. If required,
+                        we will repair, replace, or refund your damaged item.
+
+                        If you receive an incorrect item, please report it to us as soon as possible and we will make
+                        arrangements for this to be returned and the correct item sent to you.
+                    </p>
+                </div>
+                <div class="faq__item accordeon">
+                    <button class="faq__item-title accordeon__title">
+                        How do I care for my furniture?<span></span>
+                    </button>
+                    <p class="faq__item-content accordeon__content">
+                        In the unlikely event that you wish to return your furniture, Sabai Living offer a 30-day
+                        returns policy. However, you will be charged an administrative fee to cover this. Your refund
+                        will be processed as soon as the product has been returned to our warehouse and has been
+                        thoroughly checked for any damage or quality issues. Sabai Living can only issue refunds for
+                        items that are not damaged.
+
+                        What do I do if my item arrives damaged, or if I have received the wrong item?
+                        In the unlikely event that you receive a damaged item, please contact us within 24 hours of
+                        receiving your order. You can contact us via telephone or email. We will ask you to send
+                        photographs and a description of the damage and will then thoroughly investigate. If required,
+                        we will repair, replace, or refund your damaged item.
+
+                        If you receive an incorrect item, please report it to us as soon as possible and we will make
+                        arrangements for this to be returned and the correct item sent to you.
+                    </p>
+                </div>
+                <div class="faq__item accordeon">
+                    <button class="faq__item-title accordeon__title">
+                        Is the furniture ‘flat packed’ or ‘fully assembled’?<span></span>
+                    </button>
+                    <p class="faq__item-content accordeon__content">
+                        In the unlikely event that you wish to return your furniture, Sabai Living offer a 30-day
+                        returns policy. However, you will be charged an administrative fee to cover this. Your refund
+                        will be processed as soon as the product has been returned to our warehouse and has been
+                        thoroughly checked for any damage or quality issues. Sabai Living can only issue refunds for
+                        items that are not damaged.
+
+                        What do I do if my item arrives damaged, or if I have received the wrong item?
+                        In the unlikely event that you receive a damaged item, please contact us within 24 hours of
+                        receiving your order. You can contact us via telephone or email. We will ask you to send
+                        photographs and a description of the damage and will then thoroughly investigate. If required,
+                        we will repair, replace, or refund your damaged item.
+
+                        If you receive an incorrect item, please report it to us as soon as possible and we will make
+                        arrangements for this to be returned and the correct item sent to you.
+                    </p>
+                </div>
+                <div class="faq__item accordeon">
+                    <button class="faq__item-title accordeon__title">
+                        When can I expect my item to be delivered?<span></span>
+                    </button>
+                    <p class="faq__item-content accordeon__content">
+                        In the unlikely event that you wish to return your furniture, Sabai Living offer a 30-day
+                        returns policy. However, you will be charged an administrative fee to cover this. Your refund
+                        will be processed as soon as the product has been returned to our warehouse and has been
+                        thoroughly checked for any damage or quality issues. Sabai Living can only issue refunds for
+                        items that are not damaged.
+
+                        What do I do if my item arrives damaged, or if I have received the wrong item?
+                        In the unlikely event that you receive a damaged item, please contact us within 24 hours of
+                        receiving your order. You can contact us via telephone or email. We will ask you to send
+                        photographs and a description of the damage and will then thoroughly investigate. If required,
+                        we will repair, replace, or refund your damaged item.
+
+                        If you receive an incorrect item, please report it to us as soon as possible and we will make
+                        arrangements for this to be returned and the correct item sent to you.
+                    </p>
+                </div>
+            </div>
+        </sction>
+        <section class="popular">
+            <div class="container">
+                <h2 class="popular__title">
+                    Shop Our Other Popular Sets
+                </h2>
+                <div class="popular__inner">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/footer.html',{})
+</body>
+
+</html>

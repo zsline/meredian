@@ -277,17 +277,7 @@
     width: 250px;
 }
 
-.collection-room__inner-item .price {
 
-    &__new,
-    &__sale {
-        color: var(--red);
-    }
-
-    &__old {
-        color: var(--light-grey-color);
-    }
-}
 
 .select__arrow {
     position: absolute;
