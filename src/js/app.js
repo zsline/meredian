@@ -86,6 +86,8 @@ $('.product-item__slider-thumb').slick({
 
 
 
+
+
 const rangeSlider = document.getElementById('renge-slider');
 if (rangeSlider) {
   noUiSlider.create(rangeSlider, {
@@ -115,3 +117,92 @@ if (rangeSlider) {
     });
   });
 }
+
+const dots = document.querySelectorAll('.benefits-slider__nav-dot');
+const items = document.querySelectorAll('.benefits-slider__item');
+let index = 0;
+const activeSlide = n => {
+  items.forEach((el) => {
+    el.classList.remove('active');
+    items[n].classList.add('active');
+  });
+}
+const activeDots = n => {
+  dots.forEach((el) => {
+    el.classList.remove('active');
+    dots[n].classList.add('active');
+  });
+}
+dots.forEach((item, indexDot) => {
+  item.addEventListener('click', () => {
+    index = indexDot;
+    activeSlide(index);
+    activeDots(index)
+  });
+});
+
+
+// class HvrSlider {
+//   constructor(selector) {
+//     const elements = document.querySelectorAll(selector);
+//     elements.forEach((el) => {
+//       if (el.querySelectorAll('img').length > 1) {
+//         const hvr = document.createElement('div');
+//         hvr.classList.add('hvr');
+
+//         const hvrImages = document.createElement('div');
+//         hvrImages.classList.add('hvr__images');
+//         hvr.appendChild(hvrImages);
+
+//         const hvrSectors = document.createElement('div');
+//         hvrSectors.classList.add('hvr__sectors');
+//         hvrImages.appendChild(hvrSectors);
+
+//         const hvrDots = document.createElement('div');
+//         hvrDots.classList.add('hvr__dots');
+//         hvr.appendChild(hvrDots);
+
+//         el.parentNode.insertBefore(hvr, el);
+//         hvrImages.prepend(el);
+
+//         const hvrImagesArray = hvr.querySelectorAll('img');
+//         hvrImagesArray.forEach(() => {
+//           hvrSectors.insertAdjacentHTML('afterbegin', '<div class="hvr__sector"></div>');
+//           hvrDots.insertAdjacentHTML('afterbegin', '<div class="hvr__dot"></div>');
+//         });
+//         hvrDots.firstChild.classList.add('hvr__dot--active');
+//         const setActiveEl = function (targetEl) {
+//           const index = [...hvrSectors.children].indexOf(targetEl);
+//           hvrImagesArray.forEach((img, idx) => {
+//             if (index == idx) {
+//               img.style.display = 'block';
+//             } else {
+//               img.style.display = 'none';
+//             }
+//           });
+//           hvr.querySelectorAll('.hvr__dot').forEach((dot, idx) => {
+//             if (index == idx) {
+//               dot.classList.add('hvr__dot--active');
+//             } else {
+//               dot.classList.remove('hvr__dot--active');
+//             }
+//           });
+//         };
+//         hvrSectors.addEventListener('mouseover', function (e) {
+//           if (e.target.matches('.hvr__sector')) {
+//             setActiveEl(e.target);
+//           }
+//         });
+//         hvrSectors.addEventListener('touchmove', function (e) {
+//           const position = e.changedTouches[0];
+//           const target = document.elementFromPoint(position.clientX, position.clientY);
+//           if (target.matches('.hvr__sector')) {
+//             setActiveEl(target);
+//           }
+//         });
+//       }
+//     });
+//   }
+// }
+
+// new HvrSlider('.benefits-slider__wrapper');

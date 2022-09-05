@@ -1,5 +1,5 @@
 .product-item {
-  margin-bottom: 100px;
+  margin-bottom: 300px;
 
   &__inner {
     display: grid;
@@ -21,7 +21,8 @@
         height: 1000px;
       }
     }
-    &_trumbs{
+
+    &_trumbs {
       z-index: 990;
     }
 
@@ -29,7 +30,7 @@
       width: 80%;
       margin: 0 auto;
       z-index: 990;
-      
+
       // display: flex;
       // justify-content: center;
 
@@ -179,5 +180,113 @@
   }
 
 }
+
+.benefits-slider {
+  position: relative;
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.3s;
+    &.active {
+      opacity: 1;
+    }
+    &-top {
+      height: 186px;
+      background-color: var(--light-grey-color);
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      padding: 30px;
+      margin-bottom: 120px;
+    }
+
+    &-img {
+
+      img {
+        width: 82px;
+        height: 82px;
+      }
+    }
+
+    &-title {
+      font-family: 'Outfit';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 32px;
+      letter-spacing: 0.265em;
+      text-transform: uppercase;
+    }
+
+    &-info {
+      span {
+        font-family: 'Outfit';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 33px;
+      }
+
+      p {
+        font-family: 'HK Grotesk';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 40px;
+        color: #848484;
+      }
+    }
+  }
+
+  &__nav {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    top: 280px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 22px;
+    color: #9E9E9E;
+    border-bottom: 2px solid #9E9E9E;
+    padding: 13px 0;
+
+    &-dots{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    
+    &-dot,button {
+      opacity: 1;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: '';
+        height: 4px;
+        width: 0;
+        background-color: var(--black-color);
+        left: 0;
+        bottom: -16px;
+        transition: all 0.3s;
+      }
+      &:focus::after{
+        width: 100%;
+      }
+    }
+    & .active::after{
+      width: 100%;
+    }
+  }
+}
+
+
 
 // конец product-page style
