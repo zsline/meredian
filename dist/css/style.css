@@ -2094,11 +2094,13 @@ select option {
   display: flex;
   justify-content: space-between;
 }
-.benefits-slider__nav-dot, .benefits-slider__nav button {
+.benefits-slider__nav-dot,
+.benefits-slider__nav button {
   opacity: 1;
   position: relative;
 }
-.benefits-slider__nav-dot::after, .benefits-slider__nav button::after {
+.benefits-slider__nav-dot::after,
+.benefits-slider__nav button::after {
   position: absolute;
   content: "";
   height: 4px;
@@ -2108,11 +2110,34 @@ select option {
   bottom: -16px;
   transition: all 0.3s;
 }
-.benefits-slider__nav-dot:focus::after, .benefits-slider__nav button:focus::after {
+.benefits-slider__nav-dot:focus::after,
+.benefits-slider__nav button:focus::after {
   width: 100%;
 }
 .benefits-slider__nav .active::after {
   width: 100%;
+}
+
+.popular {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.popular__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.popular__item {
+  text-align-last: left;
+}
+.popular__item .btn {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 33px;
+  text-transform: none;
+  margin-top: 30px;
 }
 
 input::-webkit-outer-spin-button,
