@@ -298,6 +298,8 @@ margin-bottom: 100px;
   &__inner {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
   }
 
   &__item {
@@ -314,6 +316,50 @@ margin-bottom: 100px;
       margin-top: 30px;
     }
   }
+}
+.review{
+  margin-bottom: 175px;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-btn{
+      text-transform: none;
+      background-color: var(--main-color);
+      padding: 32px 38px;
+    }
+  }
+  &__inner{
+    color: var(--light-grey-text);
+    margin-bottom: 50px;
+  }
+  &__item{
+      display: flex;
+      gap: 100px;
+      padding-bottom: 50px;
+      &-data{
+        margin-right: 200px;
+        min-width: 150px;
+      }
+      &-verified{
+        display: inline-block;
+        position: relative;
+        padding-right: 50px;
+        &::after{
+          position: absolute;
+          content: '';
+          background-image: url(../img/verified.svg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          bottom: 0;
+          right: 0;
+          width: 40px;
+          height: 40px;
+
+        }
+      }
+    }
 }
 
 

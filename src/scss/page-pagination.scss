@@ -1,0 +1,29 @@
+.page-pagination {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+
+    &__item {
+        width: 80px;
+        height: 80px;
+        border: 1px solid var(--black-color);
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__prev,
+    &__next
+     {
+        color: var(--light-grey-text);
+        font-size: 18px;
+    }
+
+    .active {
+        background-color: var(--accent-color);
+        border: none;
+        color: #fff;
+    }
+}

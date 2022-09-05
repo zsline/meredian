@@ -1716,6 +1716,7 @@ li {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   justify-content: space-between;
+  margin-bottom: 70px;
 }
 @media (max-width: 1380px) {
   .collection-room__inner-grid {
@@ -2125,6 +2126,8 @@ select option {
 .popular__inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 30px;
 }
 .popular__item {
   text-align-last: left;
@@ -2138,6 +2141,50 @@ select option {
   line-height: 33px;
   text-transform: none;
   margin-top: 30px;
+}
+
+.review {
+  margin-bottom: 175px;
+}
+.review__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.review__top-btn {
+  text-transform: none;
+  background-color: var(--main-color);
+  padding: 32px 38px;
+}
+.review__inner {
+  color: var(--light-grey-text);
+  margin-bottom: 50px;
+}
+.review__item {
+  display: flex;
+  gap: 100px;
+  padding-bottom: 50px;
+}
+.review__item-data {
+  margin-right: 200px;
+  min-width: 150px;
+}
+.review__item-verified {
+  display: inline-block;
+  position: relative;
+  padding-right: 50px;
+}
+.review__item-verified::after {
+  position: absolute;
+  content: "";
+  background-image: url(../img/verified.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
 }
 
 input::-webkit-outer-spin-button,
@@ -2169,6 +2216,31 @@ input[type=number] {
 }
 .filter-price__input::placeholder {
   color: var(--light-grey-color);
+}
+
+.page-pagination {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+.page-pagination__item {
+  width: 80px;
+  height: 80px;
+  border: 1px solid var(--black-color);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.page-pagination__prev, .page-pagination__next {
+  color: var(--light-grey-text);
+  font-size: 18px;
+}
+.page-pagination .active {
+  background-color: var(--accent-color);
+  border: none;
+  color: #fff;
 }
 
 /* Functional styling;
