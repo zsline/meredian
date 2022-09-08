@@ -1,0 +1,106 @@
+.help {
+    text-align: center;
+    margin-bottom: 100px;
+
+    p {
+        margin-bottom: 100px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+
+
+        &-item {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 26px;
+
+        }
+
+        &-title {
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 32px;
+            letter-spacing: 0.265em;
+            text-transform: uppercase;
+            color: #A2BEAA;
+            margin-bottom: 20px;
+        }
+
+        span {
+            width: 106px;
+            height: 106px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #A2BEAA;
+            color: #fff;
+        }
+    }
+}
+
+.talk {
+    text-align: center;
+    margin-bottom: 100px;
+
+    &__form {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+
+        &-inputs {
+            width: 100%;
+            display: grid;
+            justify-content: space-between;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 168px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            font-size: 25px;
+            line-height: 33px;
+            padding: 22px 26px;
+            border: 1.39691px solid #B5B5B5;
+            border-radius: 11.1753px;
+            margin-top: 10px;
+            margin-bottom: 50px;
+
+            ::placeholder {
+                color: #A2A9B0;
+            }
+        }
+
+        textarea {
+            min-height: 260px;
+            resize: none;
+        }
+
+        &-btn {
+            padding: 32px 50px;
+            max-width: 370px;
+            margin: 0 auto;
+        }
+
+        &-mess {
+            min-height: 260px;
+
+            input {
+                height: 100%;
+            }
+        }
+
+
+
+
+    }
+
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+"title":"Help"
+})
+
+<body>
+    @@include('html/header.html',{})
+    <main>
+        <section class="help">
+            <div class="container">
+                <h1>
+                    We Ready To Help
+                </h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nulla a ut diam et, sapien dis</p>
+                <div class="help__info">
+                    <div class="help__info-item">
+                        <span class="icon-phone-mini"></span>
+                        <div class="help__info-box">
+                            <div class="help__info-title">
+                                Phone Number
+                            </div>
+                            <div class="help__info-content">
+                                (62) 1829017
+                            </div>
+                        </div>
+                    </div>
+                    <div class="help__info-item">
+                        <span class="icon-mail"></span>
+                        <div class="help__info-box">
+                            <div class="help__info-title">
+                                Email
+                            </div>
+                            <div class="help__info-content">
+                                Hello@Meridian.co
+                            </div>
+                        </div>
+                    </div>
+                    <div class="help__info-item">
+                        <span class="icon-location_on"></span>
+                        <div class="help__info-box">
+                            <div class="help__info-title">
+                                Map Street
+                            </div>
+                            <div class="help__info-content">
+                                John Bucarest St. 199
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="talk">
+            <div class="container">
+                <h2>Let’s Talk With Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nulla a ut diam et, sapien dis</p>
+                <form class="talk__form form" action="#" method="get">
+                    <div class="talk__form-inputs">
+                        <div class="talk__form-input">
+                            Name<br>
+                            <input class="form__input" type="text"  value="" placeholder="Enter your name">
+                        </div>
+                        <div  class="talk__form-input">
+                            Email<br>
+                            <input class="form__input" type="email"  value="" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div  class="talk__form-mess">
+                        Message<br>
+                        <textarea class="form__input" type="text"  value="" placeholder="Write your message"></textarea>
+                    </div>
+                    <button class="talk__form-btn btn">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    @@include('html/footer.html',{})
+</body>
+
+</html>
