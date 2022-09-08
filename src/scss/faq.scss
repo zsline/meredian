@@ -1,0 +1,58 @@
+.faq {
+    &__accordeon {
+        position: relative;
+        border: 2px solid #DEDEDE;
+        border-radius: 20.3072px;
+        padding: 30px 100px 30px 30px;
+        text-align: left;
+        margin-bottom: 40px;
+        transition: all 0.3s;
+
+        @media(max-width:800px) {
+            font-size: 16px;
+            line-height: 23px;
+            padding: 17px 80px 17px 17px;
+            margin-bottom: 20px;
+        }
+
+
+        &-title {
+            margin: 0;
+            display: block;
+            text-align: left;
+
+            @media(max-width:800px) {
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+
+
+
+        span {
+            position: absolute;
+            right: -50px;
+            top: 50%;
+            transform: translateX(-50%);
+
+            @media(max-width:800px) {
+                right: -80px;
+            }
+        }
+    }
+
+    .active {
+        border: 2px solid #B58269;
+
+        .accordeon__title {
+            color: #B58269;
+        }
+    }
+
+    h1 {
+        @media(max-width:800px) {
+            font-size: 35px;
+            line-height: 42px;
+        }
+    }
+}

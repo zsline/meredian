@@ -325,6 +325,10 @@ li {
   padding: 0;
 }
 
+section {
+  text-align: center;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -2260,6 +2264,17 @@ input[type=number] {
   justify-content: center;
   gap: 100px;
 }
+@media (max-width: 1440px) {
+  .help__info {
+    gap: 30px;
+  }
+}
+@media (max-width: 1224px) {
+  .help__info {
+    flex-direction: column;
+    align-items: start;
+  }
+}
 .help__info-item {
   text-align: left;
   display: flex;
@@ -2277,6 +2292,26 @@ input[type=number] {
   color: #A2BEAA;
   margin-bottom: 20px;
 }
+@media (max-width: 1224px) {
+  .help__info-title {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.265em;
+  }
+}
+@media (max-width: 340px) {
+  .help__info-title {
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.165em;
+  }
+}
+@media (max-width: 1224px) {
+  .help__info {
+    font-size: 35px;
+    line-height: 44px;
+  }
+}
 .help__info span {
   width: 106px;
   height: 106px;
@@ -2286,6 +2321,26 @@ input[type=number] {
   align-items: center;
   background-color: #A2BEAA;
   color: #fff;
+}
+@media (max-width: 1224px) {
+  .help__info span {
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 360px) {
+  .help__info span {
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 1224px) {
+  .help__info-content {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .talk {
@@ -2303,6 +2358,21 @@ input[type=number] {
   justify-content: space-between;
   grid-template-columns: repeat(2, 1fr);
   gap: 168px;
+}
+@media (max-width: 1440px) {
+  .talk__form-inputs {
+    gap: 30px;
+  }
+}
+@media (max-width: 1224px) {
+  .talk__form-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+.talk__form-input {
+  width: 100%;
 }
 .talk__form input,
 .talk__form textarea {
@@ -2333,6 +2403,58 @@ input[type=number] {
 }
 .talk__form-mess input {
   height: 100%;
+}
+
+.faq__accordeon {
+  position: relative;
+  border: 2px solid #DEDEDE;
+  border-radius: 20.3072px;
+  padding: 30px 100px 30px 30px;
+  text-align: left;
+  margin-bottom: 40px;
+  transition: all 0.3s;
+}
+@media (max-width: 800px) {
+  .faq__accordeon {
+    font-size: 16px;
+    line-height: 23px;
+    padding: 17px 80px 17px 17px;
+    margin-bottom: 20px;
+  }
+}
+.faq__accordeon-title {
+  margin: 0;
+  display: block;
+  text-align: left;
+}
+@media (max-width: 800px) {
+  .faq__accordeon-title {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+.faq__accordeon span {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 800px) {
+  .faq__accordeon span {
+    right: -80px;
+  }
+}
+.faq .active {
+  border: 2px solid #B58269;
+}
+.faq .active .accordeon__title {
+  color: #B58269;
+}
+@media (max-width: 800px) {
+  .faq h1 {
+    font-size: 35px;
+    line-height: 42px;
+  }
 }
 
 /* Functional styling;
