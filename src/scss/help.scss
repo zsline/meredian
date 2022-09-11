@@ -48,6 +48,7 @@
                 line-height: 25px;
                 letter-spacing: 0.265em;
             }
+
             @media (max-width: 340px) {
                 font-size: 18px;
                 line-height: 25px;
@@ -79,6 +80,7 @@
                 width: 80px;
                 height: 80px;
             }
+
             @media (max-width: 360px) {
                 font-size: 20px;
                 width: 70px;
@@ -130,12 +132,13 @@
 
         input,
         textarea {
+            font-family: 'HK Grotesk';
             width: 100%;
             font-size: 25px;
             line-height: 33px;
             padding: 22px 26px;
-            border: 1.39691px solid #B5B5B5;
-            border-radius: 11.1753px;
+            border: 2px solid #B5B5B5;
+            border-radius: 12px;
             margin-top: 10px;
             margin-bottom: 50px;
 
@@ -147,6 +150,7 @@
         textarea {
             min-height: 260px;
             resize: none;
+
         }
 
         &-btn {

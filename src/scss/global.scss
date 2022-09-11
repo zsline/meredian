@@ -332,3 +332,22 @@ section{
     width: 10em;
     z-index: 1;
 }
+
+.quantity{
+    font-size: 25px;
+    input{
+        border: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+    }
+    button{
+        font-size: 40px;
+    }
+}
+.close {
+    cursor: pointer;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('html/head.html',{
+"title":"Cart"
+})
+
+<body>
+    @@include('html/header.html',{})
+    @@include('html/pagination-cart.html',{})
+    <main>
+        <section class="cart-page">
+            <div class="container">
+                <h1 style="display: none;">
+                    Cart
+                </h1>
+                <div class="cart-page__shoping">
+                    <div class="cart-page__shoping-top">
+                        <h2>Shopping Cart</h2>
+                        <p><span>2</span>items</p>
+                    </div>
+                    <table  class="cart-page__shoping-cart">
+                        <tr>
+                            <th>Products</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                        <tr class="cart-page__item" data-art="001">
+                            <td>
+                                <div class="cart-page__shoping-item">
+                                    <img src="@img/collection-1.jpg" alt="collection">
+                                    <p>
+                                        Serene Linen Deluxe Cloud
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <table class="cart-page__shoping-quantity quantity">
+                                    <tr class="quantity__wrapper">
+                                        <td><button class="quantity__btn" data-action="minus">-</button></td>
+                                        <td><input class="quantity__num" type="number" value="1" data-counter></td>
+                                        <td><button class="quantity__btn" data-action="plus">+</button></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="cart__price">£<span>2500.00</span></td>
+                            <td  class="cart-page__shoping-del"><button class="icon-x close"></button></td>
+                        </tr>
+                        <tr class="cart-page__item">
+                            <td>
+                                <div class="cart-page__shoping-item">
+                                    <img src="@img/collection-2.jpg" alt="collection">
+                                    <p>
+                                        Hilton Boucle Fabric Chaise Lounge
+                                    </p>
+                                </div>
+                            </td>
+                            <td>
+                                <table class="cart-page__shoping-quantity quantity">
+                                    <tr class="quantity__wrapper">
+                                        <td><button class="quantity__btn" data-action="minus">-</button></td>
+                                        <td><input class="quantity__num" type="number" value="1" data-counter></td>
+                                        <td><button class="quantity__btn" data-action="plus">+</button></td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td class="cart__price">£<span>2500.00</span></td>
+                            <td class="cart-page__shoping-del"><button class="icon-x close"></button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cart-page__order">
+                    <h2>Order Summary</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include('html/footer.html',{})
+</body>
+
+</html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220911175106">
     <title>Product</title>
 </head>
 
@@ -74,7 +74,7 @@
                             </li>
                         </ul>
                         <div class="menu__nav-item menu__nav-cart cart">
-                            <a href="#" class="menu__nav-link icon-cart" style="color: #545454;">
+                            <a href="cart.html" class="menu__nav-link icon-cart" style="color: #545454;">
                                 <span>1</span> </a>
 
                         </div>
@@ -118,11 +118,11 @@
     <main>
         <section class="product-item">
             <div class="container">
-                <div class="product-item__inner">
+                <div data-art="001" class="product-item__inner">
                     <div class="product-item__slider">
                         <div class="product-item__slider-wrapper">
                             <div class="product-item__slider-item">
-                                <img id="product-slider" src="img/product-1.jpg" alt="slider">
+                                <picture><source srcset="img/product-1.webp" type="image/webp"><img id="product-slider" src="img/product-1.jpg" alt="slider"></picture>
                             </div>
                         </div>
                         <div class="product-item__slider-thumbs">
@@ -197,7 +197,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <button class="product-item__info-tocart btn">Add To Cart</button>
+                        <button class="product-item__info-tocart btn add-cart" data-cart>Add To Cart</button>
                         <div class="product-item__info-guaranteed">
                             <div class="product-item__info-guaranteed--title">
                                 Guaranteed Safe Checkout<span class="icon-closed"></span>
@@ -342,7 +342,7 @@
             <div class="container">
                 <div class="cast__wrapper">
                     <div class="cast__img">
-                        <img src="img/furniture-cart.jpg" alt="Cast Aluminium Furniture">
+                        <picture><source srcset="img/furniture-cart.webp" type="image/webp"><img src="img/furniture-cart.jpg" alt="Cast Aluminium Furniture"></picture>
                     </div>
                     <div class="cast__info">
                         <h2 class="cast__info-title">Cast Aluminium Furniture</h2>
@@ -565,7 +565,7 @@
                 <div class="popular__inner">
                     <div class="popular__item">
                         <a href="product-page.html" class="collection-room__inner-item">
-                            <div class="collection-room__inner-img"><img src="img/popular-1.jpg" alt="">
+                            <div class="collection-room__inner-img"><picture><source srcset="img/popular-1.webp" type="image/webp"><img src="img/popular-1.jpg" alt=""></picture>
                             </div>
                             <div class="collection-room__inner-title">
                                 Alma Velvet Armless
@@ -582,7 +582,7 @@
                     </div>
                     <div class="popular__item">
                         <a href="product-page.html" class="collection-room__inner-item">
-                            <div class="collection-room__inner-img"><img src="img/popular-2.jpg" alt="">
+                            <div class="collection-room__inner-img"><picture><source srcset="img/popular-2.webp" type="image/webp"><img src="img/popular-2.jpg" alt=""></picture>
                             </div>
                             <div class="collection-room__inner-title">
                                 Alma Velvet Armless Set
@@ -599,7 +599,7 @@
                     </div>
                     <div class="popular__item">
                         <a href="product-page.html" class="collection-room__inner-item">
-                            <div class="collection-room__inner-img"><img src="img/popular-3.jpg" alt="">
+                            <div class="collection-room__inner-img"><picture><source srcset="img/popular-3.webp" type="image/webp"><img src="img/popular-3.jpg" alt=""></picture>
                             </div>
                             <div class="collection-room__inner-title">
                                 Alina Velvet Set
@@ -616,7 +616,7 @@
                     </div>
                     <div class="popular__item">
                         <a href="product-page.html" class="collection-room__inner-item">
-                            <div class="collection-room__inner-img"><img src="img/popular-4.jpg" alt="">
+                            <div class="collection-room__inner-img"><picture><source srcset="img/popular-4.webp" type="image/webp"><img src="img/popular-4.jpg" alt=""></picture>
                             </div>
                             <div class="collection-room__inner-title">
                                 Serpentine Velvet Sofa
